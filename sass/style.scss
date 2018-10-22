@@ -1,0 +1,65 @@
+@mixin box-shadow ($offsetv, $offseth, $blur, $color) {
+        -moz-box-shadow: $offsetv $offseth $blur  $color;
+        -o-box-shadow: $offsetv $offseth $blur  $color;
+        -ms-box-shadow: $offsetv $offseth $blur  $color;
+        -webkit-box-shadow: $offsetv $offseth $blur  $color;
+        box-shadow: $offsetv $offseth $blur  $color;
+}
+
+.logo {
+	width: 300px;
+	height: 300px;
+	background: #ffb400;
+	border-radius: 50%;
+	box-sizing: border-box;
+	display: inline-block;
+	border: white 12px solid;
+
+	@include box-shadow(0px, 0px, 20px, rgba(0,0,0,0.5));
+}
+
+.circulo-interno {
+	width: 245px;
+	height: 245px;
+	background: black;
+	border-radius: 50%;
+	display: inline-block;
+
+	margin: 15px;
+    box-sizing: border-box;
+}
+
+.circulo-interno-2 {
+	width: 200px;
+	height: 200px;
+	background: #ffb400;
+	display: inline-block;
+	box-sizing: border-box;
+	border-radius: 50%;
+	margin: 22px;
+}
+
+.barra-1 {
+	width: 210px;
+	height: 42px;
+	background: black;
+	display: inline-block;
+	transform: rotate(45deg);
+
+    position:  relative;
+    top: 79px;
+    left: -7px;
+}
+
+.barra-2 {
+	width: 210px;
+	height: 42px;
+	background: black;
+	display: inline-block;
+	transform: rotate(135deg);
+
+    position:  relative;
+    top: 38px;
+    left: -7px;
+}
+
